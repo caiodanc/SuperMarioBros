@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "RetroMarioRegular";
+    src: url("./fonts/RetroMarioRegular.otf") format('truetype');
+}
+
+@font-face {
+    font-family: "SuperMarioMakerExtended";
+    src: url("./fonts/SuperMarioMakerExtended.ttf") format('truetype');
+}
+
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.logo-mario {
+
+    height: 200px;
+    cursor: pointer;
+}
+
+.logo-mario:hover {
+
+    height: 250px;
+    transition: 2s ease-in-out;
+}
+
+.imagem-mario-e-luigi {
+
+    height: 500px;
+    margin-top: -100px;
+}
+
+button {
+
+    color: white;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 40px;
+    cursor: pointer;
+    font-family: 'SuperMarioMakerExtended', sans-serif;
+}
+
+.botao-contato a:hover {
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+    color: yellow
+}
+
+.caixa-mae {
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-principal {
+    width: 50%;
+    margin-top: -50px;
+    border: #18d80f;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    font-family: 'SuperMarioMakerExtended', sans-serif;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video {
+
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 20px;
+    font-family: "RetroMarioRegular", sans-serif;
+}
+
+.header img {
+    height: 60px;
+    transition: 0.5s ease-in-out;
+}
+
+.header img:hover {
+    height: 70px;
+}
+
+.header a {
+
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #c51111;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.Home {
+    color: #18d80f;
+}
+
+.Serviços {
+    color: yellow;
+}
+
+.FaleConosco {
+    color: #1E90FF;
+}
+
+.toad-running {
+    display: flex;
+    position: fixed;
+    width: 20%;
+    top: 50%;
+    right: -400px;
+    transition: right 3.6s ease-in-out;
+    z-index: 1;
+}
+
+.formulario-fale-conosco {
+
+    background-image: url("./img/tubos-formulario.jpg");
+    background-size: 80vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -400px;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 20px;
+    transition: left 1.7s ease-in-out;
+    z-index: 2;
+}
+
+input {
+
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+}
+
+.bloco_mario_pequeno {
+    width: 50px;
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.bloco_mario_pequeno:hover {
+    transition: 1s ease-in-out;
+    width: 70px;
+}
+
+.mascara-formulario {
+
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7988445378151261) 30%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.8) 70%);
+    transition: visibility 1s ease-in-out;
+}
+
+@media(max-width: 1100px) {
+
+    p {
+        display: none;
+    }
+
+    .caixa-mae {
+
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .caixa-principal {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .imagem-mario-e-luigi {
+
+
+        width: 80vw;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .bloco_mario_pequeno {
+
+        position: relative;
+        display: flex;
+        width: 50px;
+        margin-top: -90px;
+        margin-left: 220px;
+    }
+
+    .header {
+
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header img {
+        display: flex;
+    }
+
+    .header a {
+
+        font-size: 17px;
+    }
+
+    .header a:hover  {
+
+        font-size: 17px;
+       
+    }
+
+    .toad-running {
+
+        width: 40%;
+    }
+
+    .bloco_mario_pequeno:hover {
+   
+        width: 50px;
+    }
+
+    .header img:hover {
+        height: 60px;
+    }
+
+    .logo-mario:hover {
+
+        height: 200px;
+    }
+}
+
+
+@media(max-width: 400px) {
+
+    p {
+        display: none;
+    }
+
+    .caixa-mae {
+
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .bloco_mario_pequeno {
+
+        position: relative;
+        display: flex;
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .caixa-principal {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .imagem-mario-e-luigi {
+
+        margin-top: 80px;
+        width: 80vw;
+        height: auto;
+    }
+
+    .header {
+
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .header img {
+
+        display: flex;
+    }
+
+    .header a {
+
+        font-size: 15px;
+    }
+
+    .header a:hover  {
+
+        font-size: 15px;
+    }
+
+    .bloco_mario_pequeno:hover {
+   
+        width: 50%;
+    }
+
+    .header img:hover {
+        height: 60px;
+    }
+
+    .logo-mario:hover {
+
+        height: 200px;
+    }
+
+}
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div onclick="hideform()" class="mascara-formulario"></div>
+
+    <div class="header">
+        <a href="https://supermario-game.com/mario-game/mobilemario.html">
+            <img src="./img/logo-header.png" alt="logo-mario">
+        </a>
+        <a class="Home" >Home</a>
+        <a href="./nosso-servicos.html" class="Serviços" >Nossos Serviços</a>
+        <a href="./fale-conosco.html" class="FaleConosco">Fale Conosco</a>
+    </div>
+
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <a href="https://www.youtube.com/watch?v=0mqnkKgLT64">
+                <img src="./img/logo.png" alt="logo-mario" class="logo-mario">
+            </a>
+            <p>Encanadores Mario e Luigi - Resolvendo seus problemas com um pouco de Aventura! "Mamma mia" </p>
+
+            <p>Você já se encontrou em uma situação de emergência com o encanamento?
+                Vazamentos inesperados, canos entupidos ou torneiras que não param de pingar?
+                Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a vocês os encanadores mais famosos
+                do
+                Reino dos Cogumelos - Mario e Luigi!
+            </p>
+
+            <button onclick="showform()" class="botao-contato"><a>Entre em Contato</a></button>
+            <a href="https://www.mariowiki.com/">
+                <img src="./img/bloco_mario_pequeno.png" alt="bloco_mario_pequeno" class="bloco_mario_pequeno">
+            </a>
+        </div>
+            <img src="./img/mario.png" alt="imagem-mario-e-luigi" class="imagem-mario-e-luigi">
+    </div>
+
+    <div class="caixa-video">
+        <video src="./img/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=19295562746&text=Ol%C3%A1,%20quero%20ajuda%20dos%20irm%C3%A3os%20Mario%20e%20Luigi!"
+        class="link-whatsapp">
+        <img src="./img/whatsapp (1).png" alt="imagem-whatsapp">
+    </a>
+
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/Eq39S3FcRav" method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Seu nome" type="text" name="nome">
+        <input placeholder="Seu telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite seu problema aqui..." name="dúvida"></textarea>
+        <button type="submit">Pedir seu orçamento</button>
+    </form>
+
+    <img src="./img/Toad_Running.png" alt="toad-running"
+        class="toad-running">
+
+</body>
+
+<script src="./scrips.js"></script>
+
+</html>
